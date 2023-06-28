@@ -9,6 +9,23 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+		TabView {
+			MainScreen()
+				.tabItem {
+					Image(systemName: "house")
+					Text("Home")
+				}
+			CategoryScreen()
+				.tabItem {
+				Image(systemName: "person")
+				Text("category")
+			}
+			CardScreen()
+				.tabItem {
+				Image(systemName: "card")
+				Text("card")
+			}
+		}
     }
 }
 
