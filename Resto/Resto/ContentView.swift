@@ -10,13 +10,13 @@ struct ContentView: View {
 				}
 			CategoryScreen()
 				.tabItem {
-				Image(systemName: "person")
-				Text("category")
+				Image(systemName: "magnifyingglass")
+				Text("search")
 			}
 			CardScreen()
 				.tabItem {
-				Image(systemName: "card")
-				Text("card")
+				Image(systemName: "cart")
+				Text("cart")
 			}
 		}
 	}

@@ -1,4 +1,4 @@
-struct Dish: Codable {
+struct Dish: Codable, Identifiable {
 	var id: Int
 	var title: String
 	var price: Int

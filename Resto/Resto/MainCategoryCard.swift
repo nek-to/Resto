@@ -13,7 +13,15 @@ struct MainCategoryCard: View {
     var image: String
 	
     var body: some View {
-		ZStack(alignment: .leading) {
+		ZStack(alignment: .topLeading) {
+			HStack {
+				AsyncImage(url: URL(string: image)) { cardImage in
+					cardImage.resizable()
+						.scaledToFill()
+				} placeholder: {
+					ProgressView()
+				}
+			}
 			HStack(alignment: .top) {
 				Text(title)
 					.font(
@@ -25,15 +33,6 @@ struct MainCategoryCard: View {
 					.frame(width: 191, alignment: .topLeading)
 					.lineLimit(3)
 					.padding(EdgeInsets.init(top: 12, leading: 16, bottom: 0, trailing: 0))
-				Spacer()
-				HStack {
-                    AsyncImage(url: URL(string: image)) { cardImage in
-                        cardImage.resizable()
-                            .scaledToFill()
-                    } placeholder: {
-                        ProgressView()
-                    }
-				}
 			}
 		}
 		.frame(height: 148)

@@ -5,8 +5,8 @@ struct MainScreen: View {
     
     var body: some View {
         VStack {
-            if let error = viewModel.error {
-                Text(error.localizedDescription)
+			if (viewModel.error != nil) {
+                ProgressView()
             } else {
                 List(viewModel.categories.сategories) { category in
                     MainCategoryCard(id: category.id, title: category.title, image: category.imageUrl)
