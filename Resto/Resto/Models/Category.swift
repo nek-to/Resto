@@ -1,4 +1,4 @@
-struct Category: Codable {
+struct Category: Codable, Identifiable {
 	var id: Int
 	var title: String
 	var imageUrl: String

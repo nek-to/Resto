@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct MainCategoryCard: View {
+    var id: Int
 	var title: String
+    var image: String
 	
     var body: some View {
 		ZStack(alignment: .leading) {
 			HStack(alignment: .top) {
-				Text("Пекарни и кондитерские")
+				Text(title)
 					.font(
 						Font.custom("SF Pro Display", size: 20)
 							.weight(.medium)
@@ -25,7 +27,12 @@ struct MainCategoryCard: View {
 					.padding(EdgeInsets.init(top: 12, leading: 16, bottom: 0, trailing: 0))
 				Spacer()
 				HStack {
-					Image("backery")
+                    AsyncImage(url: URL(string: image)) { cardImage in
+                        cardImage.resizable()
+                            .scaledToFill()
+                    } placeholder: {
+                        ProgressView()
+                    }
 				}
 			}
 		}
@@ -38,7 +45,7 @@ struct MainCategoryCard: View {
 
 struct MainCategoryCard_Previews: PreviewProvider {
     static var previews: some View {
-        MainCategoryCard(title: "Fruit")
+        MainCategoryCard(id: 0, title: "Fruit", image: "person")
 			.previewLayout(.sizeThatFits)
     }
 }

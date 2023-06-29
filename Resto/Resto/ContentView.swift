@@ -1,15 +1,6 @@
-//
-//  ContentView.swift
-//  Resto
-//
-//  Created by admin on 28.06.2023.
-//
-
 import SwiftUI
 
 struct ContentView: View {
-	var network = NetworkManager()
-	
     var body: some View {
 		TabView {
 			MainScreen()
@@ -26,16 +17,6 @@ struct ContentView: View {
 				.tabItem {
 				Image(systemName: "card")
 				Text("card")
-			}
-		}
-		.onAppear {
-			network.getCategories { res, er in
-				print("_____ \(res?.сategories.first)")
-				print("----- \(er)")
-			}
-			network.getDishes { res, er in
-				print("_____ \(res?.dishes.first)")
-				print("----- \(er)")
 			}
 		}
 	}

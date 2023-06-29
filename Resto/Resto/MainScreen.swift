@@ -1,17 +1,21 @@
-//
-//  MainScreen.swift
-//  Resto
-//
-//  Created by admin on 28.06.2023.
-//
-
 import SwiftUI
 
 struct MainScreen: View {
+    @StateObject private var viewModel = CategoriesViewModel()
+    
     var body: some View {
-		List {
-			MainCategoryCard(title: "LOl")
-		}
+        VStack {
+            if let error = viewModel.error {
+                Text(error.localizedDescription)
+            } else {
+                List(viewModel.categories.сategories) { category in
+                    MainCategoryCard(id: category.id, title: category.title, image: category.imageUrl)
+                }
+                .onAppear {
+                    viewModel.fetchCategories()
+                }
+            }
+        }
     }
 }
 
