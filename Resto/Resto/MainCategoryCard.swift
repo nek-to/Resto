@@ -28,7 +28,6 @@ struct MainCategoryCard: View {
 						Font.custom("SF Pro Display", size: 20)
 							.weight(.medium)
 					)
-					.kerning(0.2)
 					.foregroundColor(.black)
 					.frame(width: 191, alignment: .topLeading)
 					.lineLimit(3)
