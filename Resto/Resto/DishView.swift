@@ -1,16 +1,12 @@
 import SwiftUI
 
-struct DishCardView: View {
+struct DishView: View {
 	var title: String
 	var image: String
 	
 	var body: some View {
-		VStack {
-			ZStack {
-				Color(red: 0.97, green: 0.97, blue: 0.96)
-					.frame(width: 109, height: 109)
-					.cornerRadius(10)
-
+		VStack(alignment: .leading) {
+			VStack {
 				AsyncImage(url: URL(string: image)) { cardImage in
 					cardImage
 						.resizable()
@@ -20,19 +16,23 @@ struct DishCardView: View {
 				}
 				.frame(width: 99, height: 99, alignment: .center)
 			}
+			.frame(width: 109, height: 109)
+			.background(Color(red: 0.97, green: 0.97, blue: 0.96))
+			.cornerRadius(10)
 			
 			Text(title)
 				.font(Font.custom("SF Pro Display", size: 14))
-				.lineLimit(3)
+				.lineLimit(2)
 				.foregroundColor(.black)
-				.frame(alignment: .leading)
+				.frame(height: 36 ,alignment: .topLeading)
 		}
+		.frame(height: 144)
 	}
 }
 
-struct DishCardView_Previews: PreviewProvider {
+struct DishView_Previews: PreviewProvider {
 	static var previews: some View {
-		DishCardView(title: "Dish", image: "place")
+		DishView(title: "Dish", image: "place")
 			.previewLayout(.sizeThatFits)
 	}
 }

@@ -1,22 +1,29 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-		TabView {
-			MainScreen()
-				.tabItem {
-					Image(systemName: "house")
-					Text("Home")
-				}
-			CategoryScreen()
-				.tabItem {
-				Image(systemName: "magnifyingglass")
-				Text("search")
-			}
-			CardScreen()
-				.tabItem {
-				Image(systemName: "cart")
-				Text("cart")
+	var body: some View {
+		VStack {
+			TabView {
+				MainScreen()
+					.tabItem {
+						Image("main")
+						Text("Главная")
+					}
+				CategoryScreen()
+					.tabItem {
+						Image("search")
+						Text("Поиск")
+					}
+				CardScreen()
+					.tabItem {
+						Image("cart")
+						Text("Корзина")
+					}
+				AccountView()
+					.tabItem {
+						Image("account")
+						Text("Профиль")
+					}
 			}
 		}
 	}
