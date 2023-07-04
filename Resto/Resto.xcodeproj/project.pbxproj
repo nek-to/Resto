@@ -12,14 +12,20 @@
 		843B8F602A52E0FA0011DBE4 /* CardDishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B8F5F2A52E0FA0011DBE4 /* CardDishView.swift */; };
 		843B8F622A52E5850011DBE4 /* MyStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B8F612A52E5850011DBE4 /* MyStepper.swift */; };
 		843B8F642A52EEB30011DBE4 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B8F632A52EEB30011DBE4 /* ModalView.swift */; };
-		843B8F682A53162E0011DBE4 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B8F672A53162E0011DBE4 /* AccountView.swift */; };
+		843B8F682A53162E0011DBE4 /* AccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B8F672A53162E0011DBE4 /* AccountScreen.swift */; };
+		8463A27A2A5414A900385A23 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463A2792A5414A900385A23 /* Coordinator.swift */; };
+		8463A27D2A54152900385A23 /* Screens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463A27C2A54152900385A23 /* Screens.swift */; };
+		8463A27F2A5415D200385A23 /* Sheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463A27E2A5415D200385A23 /* Sheets.swift */; };
+		8463A2812A541CED00385A23 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463A2802A541CED00385A23 /* Color.swift */; };
+		8463A2832A54406A00385A23 /* SearchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463A2822A54406A00385A23 /* SearchScreen.swift */; };
+		8463A2852A5443FA00385A23 /* TotalScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463A2842A5443F900385A23 /* TotalScreen.swift */; };
 		847164ED2A4C169300513A16 /* RestoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847164EC2A4C169300513A16 /* RestoApp.swift */; };
 		847164EF2A4C169300513A16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847164EE2A4C169300513A16 /* ContentView.swift */; };
 		847164F12A4C169500513A16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847164F02A4C169500513A16 /* Assets.xcassets */; };
 		847164F42A4C169500513A16 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847164F32A4C169500513A16 /* Preview Assets.xcassets */; };
 		847164FB2A4C1F6800513A16 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847164FA2A4C1F6800513A16 /* MainScreen.swift */; };
 		847164FD2A4C1F8100513A16 /* CategoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847164FC2A4C1F8100513A16 /* CategoryScreen.swift */; };
-		847164FF2A4C1F9B00513A16 /* CardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847164FE2A4C1F9B00513A16 /* CardScreen.swift */; };
+		847164FF2A4C1F9B00513A16 /* CartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847164FE2A4C1F9B00513A16 /* CartScreen.swift */; };
 		847165012A4C225A00513A16 /* MainCategoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847165002A4C225A00513A16 /* MainCategoryCard.swift */; };
 		847165032A4C748700513A16 /* CategoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847165022A4C748700513A16 /* CategoriesModel.swift */; };
 		847165052A4C752100513A16 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847165042A4C752100513A16 /* Category.swift */; };
@@ -36,7 +42,13 @@
 		843B8F5F2A52E0FA0011DBE4 /* CardDishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDishView.swift; sourceTree = "<group>"; };
 		843B8F612A52E5850011DBE4 /* MyStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStepper.swift; sourceTree = "<group>"; };
 		843B8F632A52EEB30011DBE4 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
-		843B8F672A53162E0011DBE4 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		843B8F672A53162E0011DBE4 /* AccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountScreen.swift; sourceTree = "<group>"; };
+		8463A2792A5414A900385A23 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		8463A27C2A54152900385A23 /* Screens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screens.swift; sourceTree = "<group>"; };
+		8463A27E2A5415D200385A23 /* Sheets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheets.swift; sourceTree = "<group>"; };
+		8463A2802A541CED00385A23 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		8463A2822A54406A00385A23 /* SearchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreen.swift; sourceTree = "<group>"; };
+		8463A2842A5443F900385A23 /* TotalScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalScreen.swift; sourceTree = "<group>"; };
 		847164E92A4C169300513A16 /* Resto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Resto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		847164EC2A4C169300513A16 /* RestoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoApp.swift; sourceTree = "<group>"; };
 		847164EE2A4C169300513A16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,7 +56,7 @@
 		847164F32A4C169500513A16 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		847164FA2A4C1F6800513A16 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		847164FC2A4C1F8100513A16 /* CategoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryScreen.swift; sourceTree = "<group>"; };
-		847164FE2A4C1F9B00513A16 /* CardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScreen.swift; sourceTree = "<group>"; };
+		847164FE2A4C1F9B00513A16 /* CartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartScreen.swift; sourceTree = "<group>"; };
 		847165002A4C225A00513A16 /* MainCategoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCategoryCard.swift; sourceTree = "<group>"; };
 		847165022A4C748700513A16 /* CategoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesModel.swift; sourceTree = "<group>"; };
 		847165042A4C752100513A16 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
@@ -75,6 +87,15 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		8463A27B2A54151700385A23 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				8463A27C2A54152900385A23 /* Screens.swift */,
+				8463A27E2A5415D200385A23 /* Sheets.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 		847164E02A4C169300513A16 = {
 			isa = PBXGroup;
 			children = (
@@ -95,22 +116,16 @@
 		847164EB2A4C169300513A16 /* Resto */ = {
 			isa = PBXGroup;
 			children = (
-				847164FC2A4C1F8100513A16 /* CategoryScreen.swift */,
-				847164FE2A4C1F9B00513A16 /* CardScreen.swift */,
-				843B8F5F2A52E0FA0011DBE4 /* CardDishView.swift */,
-				843B8F632A52EEB30011DBE4 /* ModalView.swift */,
+				84E10F232A53F76500CD0AD1 /* Views */,
 				843B8F612A52E5850011DBE4 /* MyStepper.swift */,
 				847164EE2A4C169300513A16 /* ContentView.swift */,
-				843B8F672A53162E0011DBE4 /* AccountView.swift */,
+				847165002A4C225A00513A16 /* MainCategoryCard.swift */,
 				847164EC2A4C169300513A16 /* RestoApp.swift */,
 				847165072A4C75E100513A16 /* Services */,
-				847164FA2A4C1F6800513A16 /* MainScreen.swift */,
-				847165002A4C225A00513A16 /* MainCategoryCard.swift */,
 				0B4AEE8F2A4CC47E00FFD27B /* ViewModels */,
 				847164F02A4C169500513A16 /* Assets.xcassets */,
 				847165062A4C75C800513A16 /* Models */,
 				847164F22A4C169500513A16 /* Preview Content */,
-				849133692A4D4D340028B59C /* DishView.swift */,
 			);
 			path = Resto;
 			sourceTree = "<group>";
@@ -137,9 +152,36 @@
 		847165072A4C75E100513A16 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				8463A27B2A54151700385A23 /* Enums */,
 				847165082A4C75FE00513A16 /* NetworkManager.swift */,
+				8463A2792A5414A900385A23 /* Coordinator.swift */,
+				8463A2802A541CED00385A23 /* Color.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		84E10F232A53F76500CD0AD1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84E10F242A53F78100CD0AD1 /* Screens */,
+				843B8F5F2A52E0FA0011DBE4 /* CardDishView.swift */,
+				843B8F632A52EEB30011DBE4 /* ModalView.swift */,
+				849133692A4D4D340028B59C /* DishView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84E10F242A53F78100CD0AD1 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				847164FC2A4C1F8100513A16 /* CategoryScreen.swift */,
+				847164FE2A4C1F9B00513A16 /* CartScreen.swift */,
+				843B8F672A53162E0011DBE4 /* AccountScreen.swift */,
+				847164FA2A4C1F6800513A16 /* MainScreen.swift */,
+				8463A2822A54406A00385A23 /* SearchScreen.swift */,
+				8463A2842A5443F900385A23 /* TotalScreen.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +255,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				843B8F622A52E5850011DBE4 /* MyStepper.swift in Sources */,
+				8463A27F2A5415D200385A23 /* Sheets.swift in Sources */,
+				8463A2812A541CED00385A23 /* Color.swift in Sources */,
 				847165092A4C75FE00513A16 /* NetworkManager.swift in Sources */,
 				847164FB2A4C1F6800513A16 /* MainScreen.swift in Sources */,
 				8491336A2A4D4D340028B59C /* DishView.swift in Sources */,
@@ -220,15 +264,19 @@
 				8471650D2A4C7EF000513A16 /* Dish.swift in Sources */,
 				843B8F642A52EEB30011DBE4 /* ModalView.swift in Sources */,
 				847164FD2A4C1F8100513A16 /* CategoryScreen.swift in Sources */,
-				847164FF2A4C1F9B00513A16 /* CardScreen.swift in Sources */,
+				847164FF2A4C1F9B00513A16 /* CartScreen.swift in Sources */,
+				8463A2832A54406A00385A23 /* SearchScreen.swift in Sources */,
 				847164EF2A4C169300513A16 /* ContentView.swift in Sources */,
 				847165032A4C748700513A16 /* CategoriesModel.swift in Sources */,
 				847165012A4C225A00513A16 /* MainCategoryCard.swift in Sources */,
+				8463A27A2A5414A900385A23 /* Coordinator.swift in Sources */,
 				843B8F602A52E0FA0011DBE4 /* CardDishView.swift in Sources */,
-				843B8F682A53162E0011DBE4 /* AccountView.swift in Sources */,
+				843B8F682A53162E0011DBE4 /* AccountScreen.swift in Sources */,
 				8471650B2A4C7EC100513A16 /* DishesModel.swift in Sources */,
+				8463A2852A5443FA00385A23 /* TotalScreen.swift in Sources */,
 				847164ED2A4C169300513A16 /* RestoApp.swift in Sources */,
 				8491336C2A4D4EA70028B59C /* DishViewModel.swift in Sources */,
+				8463A27D2A54152900385A23 /* Screens.swift in Sources */,
 				0B4AEE912A4CC49F00FFD27B /* CategoriesViewModel.swift in Sources */,
 				847165052A4C752100513A16 /* Category.swift in Sources */,
 			);

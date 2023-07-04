@@ -1,42 +1,34 @@
 import SwiftUI
 
 struct CategoryScreen: View {
+	@EnvironmentObject var coordinator: Coordinator
 	@StateObject var viewModel = DishViewModel()
+	//	let selectedCategory: String?
 	
 	let data = Array(0...5)
 	
 	var body: some View {
 		VStack {
-			HStack {
-				Spacer()
-				
-				Text("Азиатская кухня")
-				  .font(
-					Font.custom("SF Pro Display", size: 18)
-					  .weight(.medium)
-				  )
-				  .multilineTextAlignment(.center)
-				  .foregroundColor(.black)
-				
-				Spacer()
-				
-				Image("profile")
-					.frame(width: 44, height: 44)
-					.background(.white)
-					.cornerRadius(100)
-					.padding(.horizontal)
-			}
-			.padding(.horizontal)
-			.frame(height: 60)
-			
 			ScrollView(.horizontal) {
 				LazyHGrid(rows: [GridItem(.flexible())]) {
-					ForEach(data, id: \.self) { tag in
+					ForEach(Array(viewModel.setOfTags.sorted()), id: \.self) { tag in
+						ZStack {
 							Rectangle()
-								.frame(width: 80, height: 35)
-								.foregroundColor(Color.red)
+								.foregroundColor(Color.white)
 								.cornerRadius(10)
+
+							HStack {
+								Text(tag)
+									.foregroundColor(.black)
+									.padding(.horizontal, 10)
+//									.frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+
+								Spacer()
+							}
+						}
+						.frame(height: 35)
 					}
+					.padding(.horizontal, 5)
 				}
 			}
 			.frame(height: 40)
@@ -60,11 +52,26 @@ struct CategoryScreen: View {
 				.scrollIndicators(.hidden)
 			}
 		}
+		.toolbar {
+			ToolbarItem(placement: .navigationBarTrailing) {
+				HStack {
+					Spacer()
+					
+					Image("profile")
+						.frame(width: 44, height: 44)
+						.background(.white)
+						.cornerRadius(100)
+						.padding(.horizontal)
+				}
+			}
+		}
 	}
 }
 
 struct CategoryScreen_Previews: PreviewProvider {
+	@State static var coordinator = Coordinator()
 	static var previews: some View {
 		CategoryScreen()
+			.environmentObject(coordinator)
 	}
 }

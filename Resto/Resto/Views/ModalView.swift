@@ -10,6 +10,14 @@ import SwiftUI
 struct ModalView: View {
 	@Binding var isPresented: Bool
 	@State private var isLiked = false
+	
+	init(_ isPresented: Binding<Bool>) {
+		self._isPresented = isPresented
+	}
+	
+	init() {
+		self._isPresented = .constant(false)
+	}
 
 	var body: some View {
 		VStack(alignment: .center) {

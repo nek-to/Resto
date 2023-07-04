@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CardScreen: View {
+struct CartScreen: View {
 	@State private var showSheet = false
 	let data = Array(0...5)
 	
@@ -65,7 +65,7 @@ struct CardScreen: View {
 			.blur(radius: showSheet ? 20 : 0)
 			
 			if showSheet {
-				ModalView(isPresented: $showSheet)
+				ModalView($showSheet)
 			}
 		}
 	}
@@ -73,6 +73,6 @@ struct CardScreen: View {
 
 struct CardScreen_Previews: PreviewProvider {
 	static var previews: some View {
-		CardScreen()
+		CartScreen()
 	}
 }
