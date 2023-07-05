@@ -1,10 +1,3 @@
-//
-//  ModalView.swift
-//  Resto
-//
-//  Created by admin on 03.07.2023.
-//
-
 import SwiftUI
 
 struct ModalView: View {
@@ -99,13 +92,15 @@ struct ModalView: View {
 			.frame(width: 300,height: 48)
 			.background(Color.blue)
 			.cornerRadius(10)
+			.padding(.all, 15)
 
 
-			Spacer()
+//			Spacer()
 		}
-		.frame(width: 343, height: 446)
+//		.frame(width: 350, height: 446)
 		.background(Color.white)
 		.cornerRadius(15)
+		.padding(.all, 15)
 	}
 }
 
@@ -119,8 +114,8 @@ struct BlurView: UIViewRepresentable {
 	}
 }
 
-//struct ModalView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ModalView()
-//    }
-//}
+struct ModalView_Previews: PreviewProvider {
+    static var previews: some View {
+        ModalView()
+    }
+}

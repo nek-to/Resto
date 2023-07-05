@@ -1,14 +1,12 @@
 import SwiftUI
 
 struct ContentView: View {
-	@EnvironmentObject var coordinator: Coordinator
-	
 	@State private var selectedIndex = 0
 	
 	var body: some View {
 		TabView(selection: $selectedIndex) {
 			NavigationView {
-				TotalScreen()
+				MainScreen()
 			}
 			.tabItem {
 				if selectedIndex == 0 {
@@ -61,9 +59,7 @@ struct ContentView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
-	@StateObject static var coordinator = Coordinator()
 	static var previews: some View {
 		ContentView()
-			.environmentObject(coordinator)
 	}
 }

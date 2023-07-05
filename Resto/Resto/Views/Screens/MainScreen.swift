@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct MainScreen: View {
-	@EnvironmentObject var coordinator: Coordinator
+	@StateObject private var coordinator = Coordinator()
 	
 	var body: some View {
 		NavigationStack(path: $coordinator.path) {
@@ -13,13 +13,12 @@ struct MainScreen: View {
 					coordinator.buildPage(page)
 				}
 		}
+		.environmentObject(coordinator)
 	}
 }
 
 struct MainScreen_Previews: PreviewProvider {
-	@StateObject static var coordinator = Coordinator()
 	static var previews: some View {
-		MainScreen()
-			.environmentObject(coordinator)
+		MainScreen() 
 	}
 }

@@ -32,6 +32,7 @@
 		847165092A4C75FE00513A16 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847165082A4C75FE00513A16 /* NetworkManager.swift */; };
 		8471650B2A4C7EC100513A16 /* DishesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471650A2A4C7EC100513A16 /* DishesModel.swift */; };
 		8471650D2A4C7EF000513A16 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471650C2A4C7EF000513A16 /* Dish.swift */; };
+		847AB7C52A55611100A9B248 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847AB7C42A55611100A9B248 /* BackButton.swift */; };
 		8491336A2A4D4D340028B59C /* DishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849133692A4D4D340028B59C /* DishView.swift */; };
 		8491336C2A4D4EA70028B59C /* DishViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8491336B2A4D4EA70028B59C /* DishViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		847165082A4C75FE00513A16 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		8471650A2A4C7EC100513A16 /* DishesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesModel.swift; sourceTree = "<group>"; };
 		8471650C2A4C7EF000513A16 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
+		847AB7C42A55611100A9B248 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		849133692A4D4D340028B59C /* DishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishView.swift; sourceTree = "<group>"; };
 		8491336B2A4D4EA70028B59C /* DishViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -167,6 +169,7 @@
 				843B8F5F2A52E0FA0011DBE4 /* CardDishView.swift */,
 				843B8F632A52EEB30011DBE4 /* ModalView.swift */,
 				849133692A4D4D340028B59C /* DishView.swift */,
+				847AB7C42A55611100A9B248 /* BackButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				8491336C2A4D4EA70028B59C /* DishViewModel.swift in Sources */,
 				8463A27D2A54152900385A23 /* Screens.swift in Sources */,
 				0B4AEE912A4CC49F00FFD27B /* CategoriesViewModel.swift in Sources */,
+				847AB7C52A55611100A9B248 /* BackButton.swift in Sources */,
 				847165052A4C752100513A16 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

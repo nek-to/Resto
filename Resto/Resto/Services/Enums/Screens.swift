@@ -1,4 +1,4 @@
-enum Screens: String, CaseIterable, Identifiable, Hashable {
+enum Screens: String, Identifiable {
 	case total
 	case mainScreen
 	case categories

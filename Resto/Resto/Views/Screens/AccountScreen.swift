@@ -1,10 +1,3 @@
-//
-//  AccountView.swift
-//  Resto
-//
-//  Created by admin on 03.07.2023.
-//
-
 import SwiftUI
 
 struct AccountScreen: View {

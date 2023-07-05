@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct TotalScreen: View {
-	@EnvironmentObject var coordinator: Coordinator
+	@EnvironmentObject private var coordinator: Coordinator
 	@StateObject private var viewModel = CategoriesViewModel()
 	
 	var body: some View {
@@ -39,15 +39,16 @@ struct TotalScreen: View {
 				ScrollView {
 					LazyVGrid(columns: [GridItem(.flexible())]) {
 						ForEach(viewModel.categories.сategories) { category in
-							NavigationLink(destination: CategoryScreen()) {
-//							Button {
-//								coordinator.toCategories()
-//							} label: {
+							Button {
+								coordinator.push(.categories)
+								coordinator.navigationTitle = category.title
+							} label: {
 								MainCategoryCard(id: category.id, title: category.title, image: category.imageUrl)
 									.cornerRadius(10)
 									.padding(.horizontal, 10)
 							}
 						}
+						
 					}
 					.onAppear {
 						viewModel.fetchCategories()
@@ -61,9 +62,7 @@ struct TotalScreen: View {
 }
 
 struct TotalScreen_Previews: PreviewProvider {
-	@StateObject static var coordinator = Coordinator()
 	static var previews: some View {
 		TotalScreen()
-			.environmentObject(coordinator)
 	}
 }

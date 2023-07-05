@@ -1,4 +1,4 @@
-enum Sheets: String, CaseIterable, Identifiable {
+enum Sheets: String, Identifiable {
 	case dishPopup
 	
 	var id: String {

@@ -3,31 +3,27 @@ import SwiftUI
 @MainActor
 final class Coordinator: ObservableObject {
 	@Published var path = NavigationPath()
-	@Published var screen: Screens = .mainScreen
 	@Published var sheet: Sheets?
-	@Published var currentTab: String?
+	@Published var navigationTitle: String = ""
 	
-	var mainScreenScreen: Screens = .total
-	var categoriesScreen: Screens = .categories
+	func push(_ page: Screens) {
+		path.append(page)
+	}
 	
-	func toMain() {
+	func present(_ sheet: Sheets) {
+		self.sheet = sheet
+	}
+	
+	func pop() {
+		path.removeLast()
+	}
+	
+	func popToRoot() {
 		path.removeLast(path.count)
 	}
 	
-	func toCategories() {
-		path.append(Screens.categories)
-	}
-	
-	func toSearch() {
-		path.append(Screens.searchScreen)
-	}
-	
-	func toProfile() {
-		path.append(Screens.account)
-	}
-	
-	func toDishPopup() {
-		sheet = .dishPopup
+	func dismiss() {
+		self.sheet = nil
 	}
 	
 	@ViewBuilder
@@ -39,6 +35,8 @@ final class Coordinator: ObservableObject {
 			MainScreen()
 		case .categories:
 			CategoryScreen()
+				.navigationBarBackButtonHidden(true)
+				.navigationBarItems(leading: BackButton())
 		case .searchScreen:
 			SearchScreen()
 		case .account:
